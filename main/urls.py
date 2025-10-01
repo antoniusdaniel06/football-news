@@ -16,4 +16,5 @@ urlpatterns = [
     path('logout/',views.logout_user,name="logout" ),
     path('news/<uuid:id>/edit', views.edit_news, name='edit_news'),
     path('news/<uuid:id>/delete', views.delete_news, name='delete_news'),
+    path('create-news-ajax', views.add_news_entry_ajax, name='add_news_entry_ajax'),
 ]
